@@ -73,7 +73,7 @@ local function GetFavoriteEntries()
     local result = {}
 
     for _, entry in ipairs(GetAllEntries()) do
-        if favorites[entry.id] then
+        if AshamaneGMPanelDB.favorites[entry.id] then
             table.insert(result, entry)
         end
     end
@@ -226,12 +226,15 @@ local function ShowCategory(categoryIndex)
 
             favoriteButton:ClearAllPoints()
             favoriteButton:SetPoint("LEFT", commandButton, "RIGHT", 7, 0)
-            favoriteButton:SetText(favorites[entry.id] and "★" or "☆")
+            favoriteButton:SetText(
+                AshamaneGMPanelDB.favorites[entry.id] and "★" or "☆"
+            )
 
             favoriteButton:SetScript("OnClick", function()
-                favorites[entry.id] = not favorites[entry.id]
+                AshamaneGMPanelDB.favorites[entry.id] =
+                    not AshamaneGMPanelDB.favorites[entry.id]
 
-                if favorites[entry.id] then
+                if AshamaneGMPanelDB.favorites[entry.id] then
                     favoriteButton:SetText("★")
                 else
                     favoriteButton:SetText("☆")
