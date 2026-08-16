@@ -1,7 +1,7 @@
 ## Interface: 70300
 ## Title: Ashamane GM Panel
 ## Notes: A chat-assisted GM command panel for AshamaneCore Legion 7.3.5
-## Author: Arthriticgamer and Perplexity
+## Author: Arthriticgamer Via Perplexity
 ## Version: 0.2.1
 ## SavedVariables: AshamaneGMPanelDB
 ## LoadSavedVariablesFirst: 1
