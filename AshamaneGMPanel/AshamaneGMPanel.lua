@@ -3,8 +3,6 @@ local ADDON = "AshamaneGMPanel"
 AshamaneGMPanelDB = AshamaneGMPanelDB or {}
 AshamaneGMPanelDB.favorites = AshamaneGMPanelDB.favorites or {}
 
-local favorites = AshamaneGMPanelDB.favorites
-
 local categories = {
     {
         name = "Player",
